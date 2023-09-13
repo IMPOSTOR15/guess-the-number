@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадай число</title>
+</head>
+<body>
+    <canvas id="confetti"></canvas>
+    <main class="main">
+        <h1 class="title">Угадай число!</h1>
+        <section class="start-card" id="range">
+            <h2 class="start-card_title">Выбери диапазон</h2>
+            <div class="range-row">
+                <label class="range-row_lable">
+                    <span>От</span> 
+                    <input class="range-row_input" type="number" id="minNum" value="0">
+                </label>
+                <label class="range-row_lable">
+                    <span>До</span> 
+                    <input class="range-row_input" type="number" id="maxNum" value="100">
+                </label>
+            </div>
+            <button class="btn-main" id="startGameBtn" >Начать игру</button>
+        </section>
+        <section class="game-card" id="game">
+            <h1 class="game-card_title">Ваше число?</h1>
+            <input class="game-card_guess-input" type="number" id="userGuess">
+            <p class="game-card_text game-card_text__hint" id="hint"></p>
+            <button class="btn-main" id="guessBtn" >Угадать</button>
+            <p class="game-card_text">Попыток: <span id="attempts">0</span></p>
+            
+            <button class="btn-main" id="startGameAgainBtn" >Загадать другое</button>
+            <button class="btn-main" id="changeRangeBtn" >Изменить диапазон</button>
+        </section>
+    </main>
+</body>
+</html>

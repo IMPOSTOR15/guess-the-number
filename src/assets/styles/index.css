@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+    background-color: rgb(59, 18, 97);
+    color: rgb(255, 128, 43);
+    min-height: 100vh;
+    z-index: 0;
+}
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.start-card {
+    padding: 20px;
+    width: fit-content;
+    background-color: rgb(85, 28, 138);
+    border: 2px solid rgb(255, 128, 43);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.start-card_title {
+    margin: 0;
+}
+.range-row {
+    display: flex;
+    gap: 10px;
+    
+}
+.range-row_lable {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.range-row_input {
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 0;
+    background-color: transparent;
+    color: rgb(255, 195, 155);
+    border: 2px solid rgb(255, 128, 43);
+    border-radius: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.btn-main {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid rgb(255, 128, 43);
+    border-radius: 10px;
+    color: rgb(255, 195, 155);
+    cursor: pointer;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-main:hover {
+    background-color: rgb(255, 128, 43);
+    color: rgb(111, 36, 182);
+
+}
+.btn-main__disabled {
+    opacity: 0.5;
+}
+.btn-main__disabled:hover {
+    cursor: not-allowed;
+    background-color: transparent;
+    border: 2px solid rgb(255, 128, 43);
+    color: rgb(255, 195, 155);
+}
+
+.game-card {
+    padding: 20px;
+    width: fit-content;
+    min-width: 300px;
+    background-color: rgb(85, 28, 138);
+    border: 2px solid rgb(255, 128, 43);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.game-card_title {
+    margin: 0;
+}
+.game-card_guess-input {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 0;
+    background-color: transparent;
+    color: rgb(255, 195, 155);
+    border: 2px solid rgb(255, 128, 43);
+    border-radius: 10px;
+}
+.game-card_text {
+    margin: 0;
+    height: 20px;
+}
+.game-card_text__hint {
+    height: 40px;
+}
+#game {
+    display: none;
+    
+}
